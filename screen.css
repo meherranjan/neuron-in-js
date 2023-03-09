@@ -1,0 +1,146 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-family: sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #aa4b6b;
+	background: linear-gradient(to bottom, RGB(192, 108, 132), RGB(108, 91, 123), rgb(21, 55, 83));
+	/* linear-gradient(to bottom, #C06C84, #6C5B7B, #355C7D); */
+}
+
+
+/* Container for Canvas & Controls */
+.container {
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: 1;
+}
+
+#main {
+	margin: auto;
+	padding: auto;
+}
+
+canvas {
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+/* Page Title */
+h1,
+h2 {
+	position: relative;
+	padding-top: 50px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 900;
+	color: white;
+	opacity: 0.3;
+	width: 100%;
+	margin: 0;
+}
+
+h1 {
+	padding-top: 10px;
+	font-size: 32px;
+	opacity: 0.7;
+}
+
+h1:after {
+	content: attr(data-part);
+	position: fixed;
+	right: -55px;
+	top: -40px;
+	font-size: 320px;
+	margin: 0;
+	padding: 0;
+	color: white;
+	opacity: 0.1;
+	z-index: -1;
+}
+
+/* css style of the buttons */
+.btn {
+	font-size: 16px;
+	letter-spacing: 2px;
+	color: #222;
+	cursor: pointer;
+	border: 3px solid;
+	padding: 0.25em 0.5em;
+	box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+	position: relative;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	margin-top: 40px;
+}
+
+.btn+.btn {
+	margin-left: 40px;
+}
+
+.btn:active {
+	box-shadow: 0px 0px 0px 0px;
+	top: 5px;
+	left: 5px;
+}
+
+
+#footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+#footer a {
+	position: relative;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	font-size: 12px;
+	opacity: 0.5;
+	transition: opacity 0.4s;
+}
+
+#footer a:hover {
+	color: rgb(255, 255, 255);
+	transition: opacity 0.4s;
+	opacity: 1;
+}
+
+#footer a.active {
+	opacity: 0.8;
+}
+
+#footer a:after {
+	content: attr(data-active);
+	position: absolute;
+	left: 50%;
+	top: -100%;
+	margin-left: -2px;
+	font-size: 10px;
+}
+
+#footer a+a {
+	margin-left: 50px;
+}

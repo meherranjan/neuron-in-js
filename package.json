@@ -1,0 +1,13 @@
+{
+  "name": "neuron-in-js",
+  "version": "1.0.0",
+  "main": "1.html",
+  "scripts": {
+    "start": "serve"
+  },
+  "author": "Meher Howji",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
+}

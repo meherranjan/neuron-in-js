@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link href="./screen.css" rel="stylesheet" />
+</head>
+
+<body>
+	<div id="title">
+		<h2>Neuron in JavaScript</h2>
+		<h1 data-part="2">Predictron</h1>
+	</div>
+
+	<div class="container">
+		<div id="main">
+			<!-- canvas is rendered here -->
+		</div>
+		<div id="controls">
+			<!-- buttons etc will be added here -->
+			<button class="btn" onclick="pause()">pause</button>
+			<button class="btn" onclick="resume()">resume</button>
+		</div>
+	</div>
+
+	<div id="footer">
+		<a href="./1.html" data-active="1">Functions & Lines</a>
+		<a href="./2.html" class="active" data-active="2">Predictron</a>
+		<a href="./3.html" data-active="3">Classifier</a>
+		<a href="./4.html" data-active="4">Perceptron</a>
+		<a href="./5.html" data-active="5">Neural Network</a>
+	</div>
+
+	<!-- load scripts -->
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+	<script src="./js/helpers.js"></script>
+	<script src="./js/two.js"></script>
+</body>
+
+</html>

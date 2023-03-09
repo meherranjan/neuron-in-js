@@ -1,0 +1,13 @@
+{
+	"unlisted": [
+    ".DS_Store",
+    ".git",
+		"node_modules",
+		"serve.json",
+		"readme.md",
+		"neuron-in-js.code-workspace",
+		"package.json",
+		"pnpm-lock.yaml",
+		".gitignore"
+  ]
+}

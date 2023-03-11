@@ -16,12 +16,12 @@ function createAxis() {
 }
 
 // a simple function that draws a function
-function drawFunction(f) {
+function drawFunction(f, s = 4) {
   push();
   stroke(200, 200, 200);
 
   fill(0, 0, 0, 0);
-  strokeWeight(4);
+  strokeWeight(s);
   translate(width / 2, height / 2);
   beginShape();
   for (let x = -500; x < 500; x += 0.05) {

@@ -19,10 +19,19 @@ function handleClick(input) {
   if (input === "twice") {
     config.fn = f2;
   }
+  if (input === "equal") {
+    config.fn = eq;
+  }
 }
 function fsqr(x) {
   return x * x;
 }
 function f2(x) {
-  return 2 * x;
+  return 5 * x;
+}
+function slope(x) {
+  return 2 * x 
+}
+function eq(x) {
+  return x;
 }
